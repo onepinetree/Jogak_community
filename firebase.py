@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore", category=UserWarning)
 def getFirstJogakInfo():
 
     if not firebase_admin._apps:
-        cred = credentials.Certificate('etc/secrets/orengeapp-43854-firebase-adminsdk-zq2mz-1a989fa573.json')
+        cred = credentials.Certificate('/etc/secrets/orengeapp-43854-firebase-adminsdk-zq2mz-1a989fa573.json')
         app = firebase_admin.initialize_app(cred)
 
     user_info = {}
